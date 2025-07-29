@@ -29,7 +29,7 @@ const ChatContent = () => {
                                 />
                             ))
                         }
-                                                        <div className='check-round'>Hello</div>
+                                                    <div className='check-round'>Hello</div>
                     </div>
                     <MessageEditor />
                 </PerfectScrollbar>

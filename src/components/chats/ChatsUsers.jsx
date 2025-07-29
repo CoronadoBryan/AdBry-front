@@ -100,7 +100,7 @@ const ChatsUsers = ({ sidebarOpen, setSidebarOpen }) => {
                         <Dropdown dropdownItems={chatItems} />
                       </div>
                       <p className={`fs-12 fw-semibold mt-2 mb-0 text-truncate-2-line ${is_message_read ? "" : "text-dark"}`}>
-                        Lorem ipsum dolor sit amet, consec tetuer adipi scing elit aenean commodo ipsum dolor sit amet, consec tetuer adipi scing elit aenean commodo
+                        sssssr sit amet, consec tetuer s scing elit aenean commodo ipsum dolor sit amet, consec tetuer adipi scing elit aenean commodo
                       </p>
                     </div>
                   </div>

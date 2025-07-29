@@ -36,9 +36,9 @@ const NavigationManu = () => {
                         <div className="card text-center">
                             <div className="card-body">
                                 <i className="fs-4 text-dark"><FiSunrise /></i>
-                                <h6 className="mt-4 text-dark fw-bolder">Downloading Center</h6>
-                                <p className="fs-11 my-3 text-dark">Duralux is a production ready CRM to get started up and running easily.</p>
-                                <Link href="#" className="btn btn-primary text-dark w-100">Download Now</Link>
+                                <h6 className="mt-4 text-dark fw-bolder">Version Demo</h6>
+                                <p className="fs-11 my-3 text-dark">Para ver la documentación completa, visita nuestro sitio web.</p>
+                                <Link href="#" className="btn btn-primary text-dark w-100">Ir a la documentación</Link>
                             </div>
                         </div>
                         <div style={{ height: "18px" }}></div>
