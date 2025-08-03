@@ -1,4 +1,7 @@
-import React from 'react'
+"use client"
+import React, { useContext, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
+import { AuthContext } from '@/contentApi/AuthProvider'
 import PageHeader from '@/components/shared/pageHeader/PageHeader'
 import PageHeaderDate from '@/components/shared/pageHeader/PageHeaderDate'
 import SiteOverviewStatistics from '@/components/widgetsStatistics/SiteOverviewStatistics'
@@ -13,7 +16,20 @@ import TeamProgress from '@/components/widgetsList/Progress'
 import { projectsDataTwo } from '@/utils/fackData/projectsDataTwo'
 import DuplicateLayout from './duplicateLayout'
 
+
 const Home = () => {
+  const { isAuthenticated, loading } = useContext(AuthContext);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!loading && !isAuthenticated) {
+      router.replace('/authentication/login');
+    }
+  }, [isAuthenticated, loading, router]);
+
+  if (loading) return null;
+  if (!isAuthenticated) return null;
+
   return (
     <DuplicateLayout>
       <PageHeader >
